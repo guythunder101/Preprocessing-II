@@ -1,3 +1,27 @@
+
+header{
+padding: 25px;
+margin-bottom: 25px;
+    border-bottom: dotted black;
+
+    h1{
+      display: flex;
+        justify-content: center;
+        text-align: center;
+
+      @media @mobile {
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+}
+
+.welcome-to-fun-bus{
+
+
+
+}
+
 .home {
 
   .content-section {
@@ -56,6 +80,20 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        .button(@color , @border);
+        margin: 0 10px;
+        padding: 20px;
+  border-radius: 20px;
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+      }
     }
+  }
+  @media @mobile{
+    @flex-column;
+    
   }
 }// home
